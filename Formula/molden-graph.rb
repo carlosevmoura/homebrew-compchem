@@ -1,4 +1,4 @@
-class "molden-graph" < Formula
+class Molden < Formula
   desc "Pre- and post-processing of molecular and electronic structure"
   homepage "http://www.cmbi.ru.nl/molden/"
   url "ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/molden6.2.tar.gz"
