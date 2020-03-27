@@ -1,7 +1,7 @@
 class JmolGraph < Formula
     desc "Viewer for chemical structures in 3D"
     homepage "http://www.jmol.org"
-    url "https://downloads.sourceforge.net/jmol/Jmol/Version%2014.30/Version%2014.30.2/Jmol-14.30.2-binary.zip"
+    url "https://freefr.dl.sourceforge.net/project/jmol/Jmol/Version%2014.30/Jmol%2014.30.2/Jmol-14.30.2-binary.zip"
     version "14.30.2"
     sha256 "596df817967234ae3a5870b9ef604d01741af11c291522bde9deaf4e0127a508"
 
