@@ -2,6 +2,7 @@ class MoldenGraph < Formula
   desc "Pre- and post-processing of molecular and electronic structure"
   homepage "http://www.cmbi.ru.nl/molden/"
   url "ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/molden6.2.tar.gz"
+  sha256 "ef3da667d5b7f54489573d7623805d40a7a8d0a75b7e893783922f8935d1e957"
 
   revision 1
   # tag "chemistry"
