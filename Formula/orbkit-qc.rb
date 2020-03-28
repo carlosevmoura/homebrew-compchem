@@ -20,8 +20,8 @@ class OrbkitQc < Formula
         To use Orbkit, you may need to add the directory
         to your PATH environment variable, e.g. (for bash shell):
             export ORBKITPATH="/usr/local/Cellar/orbkit-qc/1.0/bin/orbkit"
-            export PYTHONPATH=$PYTHONPATH:$ORBKITPATH
-            export PATH=$PATH:$ORBKITPATH/tools
+            export PYTHONPATH="$PYTHONPATH:$ORBKITPATH"
+            export PATH="$PATH:$ORBKITPATH/tools"
         EOS
     end
 end
