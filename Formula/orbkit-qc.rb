@@ -14,12 +14,12 @@ class OrbkitQc < Formula
         system "python3", "orbkit-qc-setup.py", "build_ext", "--inplace", "clean"
     end
 
-    def caveats;
+    def caveats
         <<~EOS
         To use #{@cask}, you may need to add the #{path} directory
         to your PATH environment variable, e.g. (for bash shell):
             export ORBKITPATH=#{path}
-            export PYTHONPATH=$PYHONPATH:$ORBKITPATH
+            export PYTHONPATH=$PYTHONPATH:$ORBKITPATH
             export PATH=$PATH:$ORBKITPATH/tools
         EOS
     end
