@@ -9,10 +9,10 @@ class OrbkitQc < Formula
     depends_on "cython"
     depends_on "numpy"
     depends_on "scipy"
-    depends_on "h5py"
-    depends_on "mayavi"
 
     def install
+        system "pip3 install h5py"
+        system "pip3 install mayavi"
         system "python3 setup.py build_ext --inplace clean"
     end
 
