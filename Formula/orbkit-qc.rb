@@ -5,8 +5,12 @@ class OrbkitQC < Formula
     version "1.0"
     sha256 "85a12305ec4f523dbedcce973f3c004491303cb68fd76f3bf3bafc506df3142e"
 
-    depends_on :
-    depends_on :
+    depends_on :python3
+    depends_on :cython
+    depends_on :numpy
+    depends_on :scipy
+    depends_on :h5py
+    depends_on :mayavi
 
     def install
         system "python3 setup.py build_ext --inplace clean"
