@@ -8,8 +8,8 @@ class OrbkitQc < Formula
     depends_on "python3"
 
     def install
-        system "pip3 install cython numpy scipy h5py mayavi"
-        system "python3 setup.py build_ext --inplace clean"
+        system "pip3", "install", "cython", "numpy", "scipy", "h5py", "mayavi"
+        system "python3", "setup.py", "build_ext", "--inplace", "clean"
     end
 
     def caveats;
