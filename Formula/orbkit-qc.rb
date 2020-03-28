@@ -9,7 +9,8 @@ class OrbkitQc < Formula
 
     def install
         system "pip3", "install", "cython", "numpy", "scipy", "h5py", "mayavi"
-        system "python3", "setup.py", "build_ext", "--inplace", "clean"
+        system "wget", "https://raw.githubusercontent.com/carlosevmoura/homebrew-compchem/develop/extra_files/orbkit-qc-setup.py"
+        system "python3", "orbkit-qc-setup.py", "build_ext", "--inplace", "clean"
     end
 
     def caveats;
