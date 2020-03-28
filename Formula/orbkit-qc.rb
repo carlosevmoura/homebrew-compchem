@@ -6,13 +6,9 @@ class OrbkitQc < Formula
     sha256 "85a12305ec4f523dbedcce973f3c004491303cb68fd76f3bf3bafc506df3142e"
 
     depends_on "python3"
-    depends_on "cython"
-    depends_on "numpy"
-    depends_on "scipy"
 
     def install
-        system "pip3 install h5py"
-        system "pip3 install mayavi"
+        system "pip3 install cython numpy scipy h5py mayavi"
         system "python3 setup.py build_ext --inplace clean"
     end
 
