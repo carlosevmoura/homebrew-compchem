@@ -25,4 +25,4 @@ class OrbkitQC < Formula
             export PATH=$PATH:$ORBKITPATH/tools
         EOS
     end
-
+end
