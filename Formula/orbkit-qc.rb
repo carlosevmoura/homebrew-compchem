@@ -13,14 +13,14 @@ class OrbkitQc < Formula
         system "wget", "--no-check-certificate", "--content-disposition", "https://raw.githubusercontent.com/carlosevmoura/homebrew-compchem/develop/extra_files/orbkit-qc-setup.py"
         system "python3", "orbkit-qc-setup.py", "build_ext", "--inplace", "clean"
         bin.install "tools/orbkit" => "orbkit"
-        bin.install "orbkit/*" => "."
+        system "cp", "-R", "orbkit/", "/usr/local/Cellar/orbkit-qc/1.0/orbkit"
     end
 
     def caveats
         <<~EOS
         To use Orbkit, you may need to add the directory
         to your PATH environment variable, e.g. (for bash shell):
-            export ORBKITPATH="/usr/local/Cellar/orbkit-qc/1.0/bin/orbkit"
+            export ORBKITPATH="/usr/local/Cellar/orbkit-qc/1.0/orbkit"
             export PYTHONPATH="$PYTHONPATH:$ORBKITPATH"
             export PATH="$PATH:$ORBKITPATH/tools"
         EOS
