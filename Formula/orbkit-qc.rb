@@ -1,4 +1,4 @@
-class OrbkitQC < Formula
+class OrbkitQc < Formula
     desc "A Toolbox for Post-Processing Quantum Chemical Wavefunction Data"
     homepage "http://orbkit.github.io"
     url "https://github.com/orbkit/orbkit/archive/v1.0.zip"
