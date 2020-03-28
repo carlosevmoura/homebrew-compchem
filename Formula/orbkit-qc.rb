@@ -16,7 +16,7 @@ class OrbkitQC < Formula
         system "python3 setup.py build_ext --inplace clean"
     end
 
-    def caveats :path_environment_variable do |path|
+    def caveats; path_environment_variable do |path|
         <<~EOS
         To use #{@cask}, you may need to add the #{path} directory
         to your PATH environment variable, e.g. (for bash shell):
