@@ -13,6 +13,7 @@ class OrbkitQc < Formula
         system "wget", "--no-check-certificate", "--content-disposition", "https://raw.githubusercontent.com/carlosevmoura/homebrew-compchem/develop/extra_files/orbkit-qc-setup.py"
         system "python3", "orbkit-qc-setup.py", "build_ext", "--inplace", "clean"
         bin.install "tools/orbkit" => "orbkit"
+        bin.install "orbkit/*" => "."
     end
 
     def caveats
