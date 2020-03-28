@@ -17,9 +17,9 @@ class OrbkitQc < Formula
 
     def caveats
         <<~EOS
-        To use #{@cask}, you may need to add the #{path} directory
+        To use #{@cask}, you may need to add the #{local_bottle_path} directory
         to your PATH environment variable, e.g. (for bash shell):
-            export ORBKITPATH=#{path}
+            export ORBKITPATH="/usr/local/Cellar/orbkit-qc/1.0/bin/orbkit"
             export PYTHONPATH=$PYTHONPATH:$ORBKITPATH
             export PATH=$PATH:$ORBKITPATH/tools
         EOS
