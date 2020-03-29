@@ -7,5 +7,9 @@ class MoldenGraph < Formula
   name 'Avogadro'
   homepage 'https://avogadro.cc/wiki/Main_Page'
 
+  def install
+        system "mv", "-fr", 'Avogadro.app', "/Applications/"
+  end
+
   app 'Avogadro.app'
 end
