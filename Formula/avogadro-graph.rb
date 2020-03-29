@@ -4,7 +4,6 @@ class AvogadroGraph < Formula
 
   # sourceforge.net/avogadro was verified as official when first introduced to the cask
     url "https://downloads.sourceforge.net/avogadro/Avogadro-1.2.0.dmg"
-    name 'Avogadro'
     homepage 'https://avogadro.cc/wiki/Main_Page'
 
     def install
