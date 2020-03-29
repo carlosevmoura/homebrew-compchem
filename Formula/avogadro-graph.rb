@@ -11,5 +11,4 @@ class AvogadroGraph < Formula
         system "mv", "-fr", 'Avogadro.app', "/Applications/"
   end
 
-  app 'Avogadro.app'
 end
