@@ -5,14 +5,14 @@ Personal science formulae for [Homebrew](https://brew.sh) package managers, fork
 ## How do I install a formula?
 
 ```sh
-brew tap carlosevmoura/homebre-compchem
+brew tap carlosevmoura/homebrew-compchem
 brew install FORMULA
 ```
 
 or
 
 ```sh
-brew install carlosevmoura/homebre-compchem/FORMULA
+brew install carlosevmoura/homebrew-compchem/FORMULA
 ```
 
 ## Commands
